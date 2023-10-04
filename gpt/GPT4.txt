@@ -1,0 +1,21 @@
+Ce TP est assez dense et consiste en la mise en place d'un protocole de preuve de connaissance à divulgation nulle pour le problème de coloration de graphes en trois couleurs. Nous allons aborder chaque partie séquentiellement.
+
+1. Génération du graphe et du coloriage
+Pour ce faire, nous devons générer un graphe 3-coloriable et le représenter sous forme de matrice d'adjacence.
+
+*** CODE ****
+
+2. Mise en gage des couleurs
+Pour cacher les couleurs tout en prouvant leur existence, nous utilisons une fonction de hachage.
+
+*** CODE ****
+
+
+4. Analyse du protocole
+Complétude: Si l'utilisateur et le vérificateur sont honnêtes et suivent le protocole, l'utilisateur pourra toujours convaincre le vérificateur car à chaque étape, la vérité est vérifiée (mise en gage, couleurs différentes des noeuds connectés).
+
+Validité: Si un utilisateur ne possède pas une preuve valide, il ne pourra pas produire la mise en gage correcte pour toutes les paires possibles, et donc ne pourra pas convaincre le vérificateur dans tous les essais (400 fois ici).
+
+Divulgation nulle: L'utilisateur ne révèle que deux couleurs à la fois, et ces couleurs sont permutées aléatoirement à chaque fois. Ainsi, le vérificateur ne peut pas déduire la coloration réelle du graphe à partir des informations reçues.
+
+NB: Ceci est une approche basique de l'implémentation. Dans une application réelle, des améliorations et des optimisations supplémentaires seraient nécessaires.
