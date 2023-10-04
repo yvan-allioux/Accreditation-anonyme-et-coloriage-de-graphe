@@ -12,10 +12,10 @@ CMD ["/bin/bash"]
 
 # COMMANDE
 
-#docker build -t rsa_py .
+#docker build -t accreditation_anonyme .
 
-#docker run -it rsa_py
+#docker run -it accreditation_anonyme
 
-#python rsa.py
+#python main.py
 
 
