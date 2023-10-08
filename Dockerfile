@@ -4,11 +4,13 @@ FROM python:3.10.6
 # Définit le répertoire de travail dans le conteneur
 WORKDIR /app
 
-# Copie le fichier rsa.py dans le conteneur
+# Copie le fichier main.py dans le conteneur
 COPY main.py .
 
-# Lance un shell Bash à l'exécution du conteneur
-CMD ["/bin/bash"]
+# Définir l'entrypoint pour python et exécuter main.py par défaut
+ENTRYPOINT ["python"]
+CMD ["main.py"]
+
 
 # COMMANDE
 
