@@ -7,6 +7,11 @@ WORKDIR /app
 # Copie le fichier main.py dans le conteneur
 COPY main.py .
 
+#pip
+RUN pip install --upgrade pip
+#pip requirements
+RUN pip install -r requirements.txt
+
 # Définir l'entrypoint pour python et exécuter main.py par défaut
 ENTRYPOINT ["python"]
 CMD ["main.py"]
