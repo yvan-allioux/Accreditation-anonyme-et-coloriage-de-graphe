@@ -25,9 +25,9 @@ class Graphe:
 
 def main():
   g = Graphe()
-
   print( 'La matrice d\'adjacence de G est : {}'.format(g.genererGraphe3Coloriable()) )
-  if __name__ == "__main__":
+
+if __name__ == "__main__":
     main()
 
 
